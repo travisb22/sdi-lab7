@@ -10,7 +10,7 @@ var myVideoGame = function(creator, studio, name, year){
 };
 // first pull
 for (var videoGame in jsonData.myGame) {
-	
+// else statements
 	if (videoGame === 0){
 		
 		var myFavoriteVideoGame = new myVideoGame(jsondata.myVideoGame[Game].year, jsonData.myVideoGame[Game].name, jsonData.myVideoGame[Game].creator, jsoData.myVidoGame[Game].studio);
