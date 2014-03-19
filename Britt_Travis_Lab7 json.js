@@ -3,20 +3,20 @@
 // My variable
 var jsonData = {
 	
-	"myVideoGame":
+	"videoGame":
 	[
 		{
-			"title": "League of Legends",
+			"name": "League of Legends",
 			"year": 2008,
 			"studio": "Riot Games",
-			"CEO": "Brandon Beck"
+			"creator": "Brandon Beck"
 		},
 		{
 			
-			"title": "Dirt",
+			"name": "Dirt",
 			"year": 2011,
 			"studio": "Codemasters",
-			"CEO": "Rod Cousens"
+			"creator": "Rod Cousens"
 		}
 	]
 };

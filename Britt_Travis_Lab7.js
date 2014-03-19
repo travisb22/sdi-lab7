@@ -2,29 +2,29 @@
 // variable
 var myVideoGame = function(creator, studio, name, year){
 // conection to json file	
-	this.CEO = CEO;
+	this.creator = creator;
 	this.studio = studio;
 	this.year = year;
 	this.name = name;
 	 
 };
 // first pull
-for (var videoGame in jsonData.myGame) {
+for (var Game in jsonData.videoGame) {
 // else statements
-	if (videoGame === 0){
+	if (Game == 0){
 		
-		var myFavoriteVideoGame = new myVideoGame(jsondata.myVideoGame[Game].year, jsonData.myVideoGame[Game].name, jsonData.myVideoGame[Game].CEO, jsoData.myVidoGame[Game].studio);
+		var myFavoriteGame = new myVideoGame(jsonData.videoGame[Game].year, jsonData.videoGame[Game].name, jsonData.videoGame[Game].creator, jsonData.videoGame[Game].studio);
 		
-	}else if (videoGame === 1) {
+	}else if (Game == 1) {
 		
-		var myLeastFavoriteVideoGame = new myVideoGame(jsondata.myVideoGame[Game].year, jsonData.myVideoGame[Game].name, jsonData.myVideoGame[Game].CEO, jsoData.myVidoGame[Game].studio);
+		var myLeastFavoriteGame = new myVideoGame(jsonData.videoGame[Game].year, jsonData.videoGame[Game].name, jsonData.videoGame[Game].creator, jsonData.videoGame[Game].studio);
 	};
 };
 // outputs for code
 myVideoGame();
 
-console.log("The game I love to play the most in my spare time is" + myFavoriteVideoGame.title + ". It was made by" + myFavoriteVideoGame.CEO + " in the year of" + myFavoriteVideoGame.year + ". The studio that was responsible for helping create it was " + myFavoriteVideoGame.studio);
+console.log("The game I love to play the most in my spare time is " + myFavoriteGame.studio + ". It was made by " + myFavoriteGame.name + " in the year of " + myFavoriteGame.creator + ". The studio that was responsible for creating it was " + myFavoriteGame.year);
 
-console.log("The game I realy dont like to play is" + myLeastFavoriteVideoGame.title + ". It was made by" + myLeastFavoriteVideGame.CEO + ", in the year of" + myLeastFavoriteVideoGame.year + ". The studio that was responsible for helping create it was " + myLeastFavoriteVideoGame.studio); 
+console.log("The game I realy dont like to play is " + myLeastFavoriteGame.studio + ". It was made by " + myLeastFavoriteGame.name + ", in the year of " + myLeastFavoriteGame.creator + ". The studio that was responsible for creating it was " + myLeastFavoriteGame.year); 
 
 
