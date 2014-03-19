@@ -1,4 +1,9 @@
-//alert("JavaScript works!");
+// Travis D.Britt
+// 3/18/2014
+// SDI 1403
+// Lab 7
+
+
 // variable
 var myVideoGame = function(creator, studio, name, year){
 // conection to json file	
